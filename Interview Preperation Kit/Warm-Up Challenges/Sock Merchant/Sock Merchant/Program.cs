@@ -37,6 +37,7 @@ class Solution
             }
         }
 
+        return pairs;
     }
 
     static void Main(string[] args)
