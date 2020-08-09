@@ -18,7 +18,7 @@ class Solution
     // Complete the arrayManipulation function below.
     static long arrayManipulation(int n, int[][] queries, int m)
     {
-        int[] manArr = new int[n];
+        long[] manArr = new long[n];
 
         //Keep track of the changes in value. +X on the first position and -X after the last position.
         for (int i = 0; i < m; i++)
@@ -33,8 +33,8 @@ class Solution
 
 
         //Go over the array, calculate at each position what the final value is and keep check of the maximum.
-        int max = 0;
-        int count = 0;
+        long max = 0;
+        long count = 0;
 
         for(int i = 0; i < manArr.Length; i++)
         {
