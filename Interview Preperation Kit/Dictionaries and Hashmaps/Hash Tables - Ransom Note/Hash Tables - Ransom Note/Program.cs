@@ -21,6 +21,7 @@ class Solution
 
         Hashtable magazineTable = new Hashtable();
 
+        //Save the amount of times each words is present in a hashtable
         foreach(string str in magazine)
         {
             if (!magazineTable.ContainsKey(str))
@@ -33,7 +34,7 @@ class Solution
             }
         }
 
-
+        //Check for each word in the note if it is present in the hashtable, and if so, if there are enough occurences to make the note.
         foreach(string str in note)
         {
             if (!magazineTable.ContainsKey(str))
